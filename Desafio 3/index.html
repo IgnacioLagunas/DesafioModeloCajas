@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deafio 3</title>
+</head>
+<body>
+    <section>
+        <div class="column">
+            <div class="bandera españa">
+                <div class="españa__franja"></div>
+            </div>
+            <h2>España</h2>
+        </div>
+        <div class="column">
+            <div class="bandera dinamarca">
+                <div class="dinamarca__franja--x"></div>
+                <div class="dinamarca__franja--y"></div>
+            </div>
+            <h2>Dinamarca</h2>
+        </div>
+        <div class="column">
+            <div class="bandera emiratos">
+                <div class="emiratos__franja--y"></div>
+                <div class="emiratos__franja--top"></div>
+                <div class="emiratos__franja--middle"></div>
+            </div>
+            <h2>Emiratos Arabes</h2>
+        </div>
+        <div class="column">
+            <div class="bandera japon">
+                <div class="japon__circle"></div>
+            </div>
+            <h2>Japon</h2>
+        </div>
+    </section>
+</body>
+    <style>
+        body{
+            background-color: khaki;
+        }
+        section{
+            margin-top: 100px;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .column{
+            flex: 40%;
+        }
+        .bandera{
+            background-color: red;
+            width: 500px;
+            height: 320px;
+        }
+
+        .españa{
+            background-color: #aa151b ;
+        }
+        .españa__franja{
+            background-color: #f1bf00 ;
+            height: 120px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .dinamarca{
+            background-color: #c7042d ;
+        }
+        .dinamarca__franja--x{
+            background-color: #ffffff;
+            height: 30px;
+            position: relative;
+            top: 50%; 
+            transform: translateY(-50%);
+                  
+        }
+        .dinamarca__franja--y{
+            background-color: #ffffff;  
+            width: 30px;
+            height: inherit;
+            position: relative;
+            top:-30px;
+            left: 120px;
+            
+        }
+
+        .emiratos{
+            background-color: #000000;
+        }
+        .emiratos__franja--top{
+            background-color: #009639;
+            height: 106px;
+        }
+        .emiratos__franja--middle{
+            background-color: #ffffff;
+            height: 106px;
+        }
+        .emiratos__franja--y{
+            background-color: #EF3340;
+            width: 130px;
+            height: inherit;
+            position: absolute;
+        }
+
+        .japon{
+            background-color: #ffffff;
+        }
+        .japon__circle{
+            background-color: #EF3340;
+            width: 130px;
+            height: 130px;
+            position: relative;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100px;
+        }
+
+
+
+
+
+
+    </style>
+</html>

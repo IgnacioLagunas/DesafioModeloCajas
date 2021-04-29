@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main{
+    margin:90px 5px 5px 5px;
+}
+.navBar{
+    background-color: green;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.box__column{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+    width: 20%;
+    padding: 5px;
+  
+    
+}
+
+ .box__column img{
+     width:90%;
+} 
+
+@media (max-width: 1500px){
+    #box__column--1, #box__column--2, #box__column--3, #box__column--4{
+        flex: 40%;
+    }
+}
+

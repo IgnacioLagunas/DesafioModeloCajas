@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    body{
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box;
+        background-color: lavender;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .despacho{
+        display: flex;
+        
+        justify-content: center;
+        
+    }
+    .despacho__img{
+        position: absolute;
+        width: 300px;
+    }
+    .despacho__ribbon{
+        width: 75px;
+        height: 75px;
+        position: relative;
+        z-index: 1;
+        top: 205px;
+        left: 97px;
+        
+    }
+    
+</style>
+<body>
+
+    <!-- La imagen que viene con el desafio ya viene con el ribbon puesto, 
+        lo pondré encima igual para realizar el desafio, si inspecciona se podrá ver -->
+
+    <section class="container">
+        <div class="despacho">
+            <img class="despacho__img" src="assets/img/ejercicio-6.png" alt="Articulo en despacho">
+            <img class="despacho__ribbon" src="assets/img/ejercicio-6_ribbon.png" alt="ribbon despacho">
+        </div>
+    </section>
+</body>
+</html>
